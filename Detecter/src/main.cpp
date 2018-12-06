@@ -193,7 +193,7 @@ void loop()
   {
     M5.Lcd.println("POST");
     count++;
-    String text = String() + "text=!!!DENGER!!! (" + count + " times!)";
+    String text = String() + "text=%E6%8E%A5%E8%BF%91%E8%AD%A6%E5%A0%B1%E7%99%BA%E4%BB%A4%EF%BC%81%EF%BC%81 (" + count + " times!)";
     post_slack(SEND_MESSAGE, token + "&" + channel + "&" + text + "&" + as_user);
 
     begin_measure();
